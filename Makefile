@@ -6,3 +6,6 @@ reinstall:
 
 publish:
 	poetry publish --dry-run
+
+push:
+	git push --set-upstream origin main
