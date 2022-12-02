@@ -28,9 +28,9 @@ jobs:
       - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v3.2.0
         if: github.ref_name == 'main'
-        enav:
+        env:
           CC_TEST_REPORTER_ID: c8772637c0870b334644b51be333d04b5467f3c94f0255118f8f47555ac3e5ed 
         with:
-          coverageCommand: make test-coverage
+          coverageCommand: make test
           debug: true
 
