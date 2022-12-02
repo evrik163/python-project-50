@@ -1,4 +1,4 @@
-install: 
+install:
 	poetry install
 
 package-install:
@@ -15,5 +15,7 @@ push:
 
 lint:
 	poetry run flake8 logic
+
 test:
 	poetry run pytest
+

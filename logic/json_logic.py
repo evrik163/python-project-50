@@ -1,5 +1,4 @@
 import json
-import pytest
 
 
 def generate_diff(path1, path2):
@@ -20,9 +19,9 @@ def generate_diff(path1, path2):
     for item in dict2.items():
         key, value = item
         if key not in dict1:
-           generator.append(f'  + {key}: {value}\n')
+            generator.append(f'  + {key}: {value}\n')
     generator.sort(key=lambda elem: elem[4])
     result = ''.join(generator)
-    result =  '{\n' + result + '}'
+    result = '{\n' + result + '}'
     result = result.lower()
     return result
