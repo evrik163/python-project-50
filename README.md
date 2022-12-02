@@ -1,6 +1,8 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/evrik163/python-project-50/workflows/hexlet-check/badge.svg)](https://github.com/evrik163/python-project-50/actions)
-
+[![Action badge](https://github.com/evrik163/python-project-50/actions/workflows/pipeline.yml/badge.svg)](https://github.com/evrik163/python-project-50/actions/workflows/pipeline.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/89d5680c9b47b416b590/maintainability)](https://codeclimate.com/github/evrik163/python-project-50/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/89d5680c9b47b416b590/test_coverage)](https://codeclimate.com/github/evrik163/python-project-50/test_coverage)
 # DESCRIPTION:
 
 **Вычислитель отличий**
