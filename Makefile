@@ -19,3 +19,5 @@ lint:
 test:
 	poetry run pytest
 
+test_coverage:
+	poetry run pytest --cov=logic --cov-report xml tests/
