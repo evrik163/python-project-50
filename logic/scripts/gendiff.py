@@ -2,6 +2,7 @@ import argparse
 from logic.flat_logic import generate_diff
 from logic.parser_logic import parser_func
 
+
 def main():
     parser = argparse.ArgumentParser(
         description='Compares two configuration files and shows a difference.')
