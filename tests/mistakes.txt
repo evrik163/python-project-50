@@ -1,1 +1,0 @@
-/home/pavel/projects/python-project-50/.venv/bin/python3: Error while finding module specification for 'json_test.py' (ModuleNotFoundError: __path__ attribute not found on 'json_test' while trying to find 'json_test.py')

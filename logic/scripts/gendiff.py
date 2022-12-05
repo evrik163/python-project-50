@@ -1,6 +1,6 @@
 import argparse
-from logic.json_logic import generate_diff
-
+from logic.flat_logic import generate_diff
+from logic.parser_logic import parser_func
 
 def main():
     parser = argparse.ArgumentParser(
@@ -9,8 +9,8 @@ def main():
     parser.add_argument('second_file')
     parser.add_argument('-f', '--format', help='set format of output')
     args = parser.parse_args()
-    result = generate_diff(args.first_file, args.second_file)
-    print(result)
+    dicts = parser_func(args.first_file, args.second_file)
+    print(generate_diff(dicts))
 
 
 if __name__ == '__main__':

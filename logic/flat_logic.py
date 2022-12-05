@@ -1,9 +1,5 @@
-import json
-
-
-def generate_diff(path1, path2):
-    dict1 = json.load(open(path1))
-    dict2 = json.load(open(path2))
+def generate_diff(dicts):
+    dict1, dict2 = dicts
     generator = []
     for item in dict1.items():
         key, value = item
