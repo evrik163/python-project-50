@@ -1,0 +1,15 @@
+import sys
+path.insert(0, "/home/pavel/projects/python-project-50/logic")
+from parser_logic import parser_func
+
+
+paser_func(file11.json, file22.json)
+
+def travel(dicts):
+    dic1, dic2 = dicts
+    if type(dic1) == dict:
+        for i in dic1.keys():
+            print(i)
+            travel(dic1[i])
+    else:
+        pass
