@@ -25,3 +25,8 @@
 **Сравнение YAML**
 
 [![asciicast](https://asciinema.org/a/ANb1QP73jCB5wJVXledaedoP9.svg)](https://asciinema.org/a/ANb1QP73jCB5wJVXledaedoP9)
+
+
+**Рекурсивное сравнение**
+
+[![asciicast](https://asciinema.org/a/vqOJnObD6uZ9NfBFoncFYBjQE.svg)](https://asciinema.org/a/vqOJnObD6uZ9NfBFoncFYBjQE)

@@ -1,12 +1,14 @@
-import pytest
 from logic.diff import travel
 from logic.parsers.json_parser import parser_func
-from logic.parsers.flat_parser import flat_formatter, nested_val
+from logic.parsers.flat_parser import flat_formatter
+import pytest
 
 
 @pytest.fixture
 def tested_func1():
-    dicts =  parser_func('tests/fixtures/file2.json', 'tests/fixtures/file1.json')
+    dicts = parser_func('tests/fixtures/file2.json',
+                        'tests/fixtures/file1.json'
+                        )
     dic1, dic2 = dicts
     differ = travel(dic1, dic2)
     return flat_formatter(differ)
@@ -14,7 +16,9 @@ def tested_func1():
 
 @pytest.fixture
 def tested_func2():
-    dicts =  parser_func('tests/fixtures/file2.yml', 'tests/fixtures/file1.yml')
+    dicts = parser_func('tests/fixtures/file2.yml',
+                        'tests/fixtures/file1.yml'
+                        )
     dic1, dic2 = dicts
     differ = travel(dic1, dic2)
     return flat_formatter(differ)
@@ -22,7 +26,9 @@ def tested_func2():
 
 @pytest.fixture
 def tested_func3():
-    dicts =  parser_func('tests/fixtures/file11.json', 'tests/fixtures/file22.json')
+    dicts = parser_func('tests/fixtures/file11.json',
+                        'tests/fixtures/file22.json'
+                        )
     dic1, dic2 = dicts
     differ = travel(dic1, dic2)
     return flat_formatter(differ)
