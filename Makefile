@@ -14,7 +14,7 @@ push:
 	git push --set-upstream origin main
 
 lint:
-	poetry run flake8 logic
+	poetry run flake8 gendiff
 
 test:
 	poetry run pytest
