@@ -5,7 +5,7 @@ description = ""
 authors = ["evrik163 <evrik163@mail.ru>"]
 readme = "README.md"
 packages = [
-  { include = "logic" },
+  { include = "gendiff" },
 ]
 
 [tool.poetry.dependencies]
