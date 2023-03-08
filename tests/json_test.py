@@ -1,6 +1,7 @@
 from logic.diff import travel
 from logic.parsers.json_parser import parser_func
 from logic.parsers.flat_parser import flat_formatter
+from logic.parsers.plain_parser import plain_formatter
 import pytest
 
 
@@ -35,6 +36,16 @@ def tested_func3():
 
 
 @pytest.fixture
+def tested_func4():
+    dicts = parser_func('tests/fixtures/file11.json',
+                        'tests/fixtures/file22.json'
+                        )
+    dic1, dic2 = dicts
+    differ = travel(dic1, dic2)
+    return plain_formatter(differ)
+
+
+@pytest.fixture
 def test_data1():
     test_example = open('tests/fixtures/short_result')
     test_example = test_example.read()
@@ -50,6 +61,14 @@ def test_data2():
     return test_example
 
 
+@pytest.fixture
+def test_data3():
+    test_example = open('tests/fixtures/plain_result')
+    test_example = test_example.read()
+    test_example = test_example.rstrip('\n')
+    return test_example
+
+
 def test1(tested_func1, test_data1):
     assert tested_func1 == test_data1
 
@@ -60,3 +79,7 @@ def test2(tested_func2, test_data1):
 
 def test3(tested_func3, test_data2):
     assert tested_func3 == test_data2
+
+
+def test4(tested_func4, test_data3):
+    assert tested_func4 == test_data3

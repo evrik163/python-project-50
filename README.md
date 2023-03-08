@@ -30,3 +30,10 @@
 **Рекурсивное сравнение**
 
 [![asciicast](https://asciinema.org/a/vqOJnObD6uZ9NfBFoncFYBjQE.svg)](https://asciinema.org/a/vqOJnObD6uZ9NfBFoncFYBjQE)
+
+
+**Плоский формат**
+
+[![asciicast](https://asciinema.org/a/K45x6U6PEMahrzhHEesuTY09Q.svg)](https://asciinema.org/a/K45x6U6PEMahrzhHEesuTY09Q)
+
+
