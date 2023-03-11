@@ -29,7 +29,7 @@ jobs:
         uses: paambaati/codeclimate-action@v3.2.0
         if: github.ref_name == 'main'
         env:
-          CC_TEST_REPORTER_ID: c8772637c0870b334644b51be333d04b5467f3c94f0255118f8f47555ac3e5ed 
+          CC_TEST_REPORTER_ID: 731385661ada8ab59d5e9b492ea6e0c1fc5cef39b7b6ba53968730d878ad419a
         with:
           coverageCommand: make test_coverage
           debug: true
