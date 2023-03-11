@@ -1,9 +1,4 @@
 import argparse
-from gendiff.diff import travel
-from gendiff.parsers.flat_parser import flat_formatter
-from gendiff.parsers.json_parser import parser_func
-from gendiff.parsers.plain_parser import plain_formatter
-from gendiff.parsers.json_dump import json_formatter
 
 
 def parse():
