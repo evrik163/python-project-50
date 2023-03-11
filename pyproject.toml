@@ -16,7 +16,7 @@ pytest-cov = "^4.0.0"
 PyYAML = "^6.0"
 
 [tool.poetry.scripts]
-gendiff = "gendiff.scripts.gendiff:main"
+gendiff = "gendiff.scripts.gendiff_2:main"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
