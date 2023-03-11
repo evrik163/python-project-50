@@ -5,6 +5,8 @@ def value_check(value):
         return str(value).lower()
     if value is None:
         return 'null'
+    if type(value) is int:
+        return value
     return f"'{value}'"
 
 
