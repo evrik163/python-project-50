@@ -23,10 +23,10 @@ def flat_formatter(lst, depth=2):  # noqa: C901
             result.append(f"""{depth * ' '}  {i['name']}: {nested_val(i['value'], depth + 4)}"""  # noqa: E501
                           )
         if i['status'] == "added":
-            result.append(f"""{depth * ' '}- {i['name']}: {nested_val(i['value'], depth + 4)}"""  # noqa: E501
+            result.append(f"""{depth * ' '}+ {i['name']}: {nested_val(i['value'], depth + 4)}"""  # noqa: E501
                           )
         if i['status'] == "deleted":
-            result.append(f"""{depth * ' '}+ {i['name']}: {nested_val(i['value'], depth + 4)}"""  # noqa: E501
+            result.append(f"""{depth * ' '}- {i['name']}: {nested_val(i['value'], depth + 4)}"""  # noqa: E501
                           )
         if i['status'] == "changed":
             result.append(f"""{depth * ' '}- {i['name']}: {nested_val(i['old_value'], depth + 4)}"""  # noqa: E501

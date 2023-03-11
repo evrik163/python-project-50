@@ -7,8 +7,8 @@ import pytest
 
 @pytest.fixture
 def tested_func1():
-    dicts = parser_func('tests/fixtures/file2.json',
-                        'tests/fixtures/file1.json'
+    dicts = parser_func('tests/fixtures/file1.json',
+                        'tests/fixtures/file2.json'
                         )
     dic1, dic2 = dicts
     differ = travel(dic1, dic2)
@@ -17,8 +17,8 @@ def tested_func1():
 
 @pytest.fixture
 def tested_func2():
-    dicts = parser_func('tests/fixtures/file2.yml',
-                        'tests/fixtures/file1.yml'
+    dicts = parser_func('tests/fixtures/file1.yml',
+                        'tests/fixtures/file2.yml'
                         )
     dic1, dic2 = dicts
     differ = travel(dic1, dic2)
@@ -27,8 +27,8 @@ def tested_func2():
 
 @pytest.fixture
 def tested_func3():
-    dicts = parser_func('tests/fixtures/file22.json',
-                        'tests/fixtures/file11.json'
+    dicts = parser_func('tests/fixtures/file11.json',
+                        'tests/fixtures/file22.json'
                         )
     dic1, dic2 = dicts
     differ = travel(dic1, dic2)
@@ -37,8 +37,8 @@ def tested_func3():
 
 @pytest.fixture
 def tested_func4():
-    dicts = parser_func('tests/fixtures/file22.json',
-                        'tests/fixtures/file11.json'
+    dicts = parser_func('tests/fixtures/file11.json',
+                        'tests/fixtures/file22.json'
                         )
     dic1, dic2 = dicts
     differ = travel(dic1, dic2)

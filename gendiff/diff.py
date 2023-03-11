@@ -27,7 +27,7 @@ def travel(dic1, dic2):
         else:
             result.append({"name": key,
                            "status": "changed",
-                           "old_value": dic2[key],
-                           "new_value": dic1[key]
+                           "old_value": dic1[key],
+                           "new_value": dic2[key]
                            })
     return result
