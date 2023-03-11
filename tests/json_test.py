@@ -27,8 +27,8 @@ def tested_func2():
 
 @pytest.fixture
 def tested_func3():
-    dicts = parser_func('tests/fixtures/file11.json',
-                        'tests/fixtures/file22.json'
+    dicts = parser_func('tests/fixtures/file22.json',
+                        'tests/fixtures/file11.json'
                         )
     dic1, dic2 = dicts
     differ = travel(dic1, dic2)
@@ -37,8 +37,8 @@ def tested_func3():
 
 @pytest.fixture
 def tested_func4():
-    dicts = parser_func('tests/fixtures/file11.json',
-                        'tests/fixtures/file22.json'
+    dicts = parser_func('tests/fixtures/file22.json',
+                        'tests/fixtures/file11.json'
                         )
     dic1, dic2 = dicts
     differ = travel(dic1, dic2)
