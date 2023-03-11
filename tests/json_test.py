@@ -1,7 +1,7 @@
-from logic.diff import travel
-from logic.parsers.json_parser import parser_func
-from logic.parsers.flat_parser import flat_formatter
-from logic.parsers.plain_parser import plain_formatter
+from gendiff.diff import travel
+from gendiff.parsers.json_parser import parser_func
+from gendiff.parsers.flat_parser import flat_formatter
+from gendiff.parsers.plain_parser import plain_formatter
 import pytest
 
 
